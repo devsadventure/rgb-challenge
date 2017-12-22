@@ -16,6 +16,7 @@ html, body{
     height: 50px;
     width: 50px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .top{
@@ -41,4 +42,41 @@ html, body{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.boxes{
+  display: flex;
+}
+
+.box{
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.65s ease;
+}
+
+.box:last-child{
+  margin-right: 0;
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-button{
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.modal.show{
+  display: flex;
+  transform: scale(46);
 }
