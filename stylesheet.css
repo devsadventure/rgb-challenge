@@ -58,6 +58,10 @@ html, body{
   margin-right: 0;
 }
 
+.box.show{
+  transform: scale(46);
+}
+
 .modal{
   position: fixed;
   top: 0;
@@ -78,5 +82,4 @@ html, body{
 
 .modal.show{
   display: flex;
-  transform: scale(46);
 }
